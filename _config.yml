@@ -77,7 +77,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : @manifest3r
+  username               : "@manifest3r"
 facebook:
   username               :
   app_id                 :
@@ -117,7 +117,7 @@ author:
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        : ""@itsababypotato"
+  instagram        : "@itsababypotato"
   lastfm           :
   linkedin         : "https://www.linkedin.com/in/abidmkhan/"
   pinterest        :
