@@ -76,19 +76,19 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
-twitter:
-  username               : "@manifest3r"
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+#twitter:
+#  username               : "@manifest3r"
+#facebook:
+#  username               :
+#  app_id                 :
+#  publisher              :
+#og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+#social:
+#  type                   : # Person or Organization (defaults to Person)
+#  name                   : # If the user or organization name differs from the site's name
+#  links: # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Abid Khan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/blogicon.jpg"
   bio              : #"I am an amazing person."
   location         : #"Somewhere"
   email            : "akhan23@wgu.edu"
@@ -113,11 +113,11 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://akhan23wgu.github.com"
+  github           : "akhan23wgu"
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        : "@itsababypotato"
+  instagram        : "itsababypotato"
   lastfm           :
   linkedin         : "https://www.linkedin.com/in/abidmkhan/"
   pinterest        :
@@ -125,7 +125,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "@manifest3r"
+  twitter          : "manifest3r"
   vine             :
   weibo            :
   xing             :
