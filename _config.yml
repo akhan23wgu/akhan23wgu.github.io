@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Abid Khan"
-  avatar           : "/assets/images/blogicon.jpg"
+  avatar           : "/assets/images/blogicon.png"
   bio              : #"I am an amazing person."
   location         : #"Somewhere"
   email            : "akhan23@wgu.edu"
