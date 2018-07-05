@@ -12,11 +12,11 @@ I've been reading more posts on r/mac and r/macOS of fellow users attempting to 
 
 <!--more-->
 
-Open the Terminal by pressing `⌘+SPACE` and type `Terminal` in Spotlight.
+Open the Terminal by pressing `⌘+SPACE` and type `Terminal` in Spotlight. Type `df -h` to list out your mounts.
 
     $ df -h
 
-Type `df -h` to list out your mounts. We are looking for the startup disk, which is mounted under **root**. My available space is 39GB. Let's see what I can recover.
+We are looking for the startup disk, which is mounted under **root**. My available space is 39GB. Let's see what I can recover.
 
     $ df -h
     Filesystem      Size   Used  Avail Capacity     iused               ifree %iused  Mounted on
