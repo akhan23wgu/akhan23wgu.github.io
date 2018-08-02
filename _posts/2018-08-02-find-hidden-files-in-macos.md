@@ -29,7 +29,7 @@ In this case we are looking for an external drive, which is mounted under **/Vol
     drivefs         16Ti   16Ti   36Gi   100% 18446744069414585447          4294967295 1638254357852094720%   /Volumes/GoogleDrive
     /dev/disk3s1   931Gi   25Gi  906Gi     3%       18134 9223372036854757673    0%   /Volumes/Data
 
-Type `cd /Volumes/Data` to change paths to your external drive. If you need to go deeper in your external drive, simply type `ls <folder name` to drill down to the desired directory. Next, type `ls -la` to list all files and folder, including ones that are hidden.
+Type `cd /Volumes/Data` to change paths to your external drive. If you need to go deeper in your external drive, simply type `cd <folder name>` to drill down to the desired directory. Next, type `ls -la` to list all files and folder, including ones that are hidden.
 
     $ cd /Volumes/Data
     $ ls -la
