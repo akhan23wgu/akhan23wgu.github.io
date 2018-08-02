@@ -61,4 +61,4 @@ Here, I can see my folder "Test" is present. Great! But how do we make it visibl
 
 I can now see my folder in Finder.
 
-![Hidden folder]({{ site.url }}{{ site.baseurl }}/assets/images/hidden-folder.png)
+![Hidden folder]({{ site.url }}{{ site.baseurl }}/assets/images/hidden-folder2.png)
