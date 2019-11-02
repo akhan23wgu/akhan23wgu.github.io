@@ -35,8 +35,9 @@ Reload systemctl daemon and start docker
 
     $ systemctl daemon-reload && systemctl start docker
 
-Setup Docker-Compose network
- - [See official Docker documentation on how to configure your network](https://docs.docker.com/network/macvlan/)
+Setup Docker network
+[See official Docker documentation on how to configure your network](https://docs.docker.com/network/macvlan/)
+
 Start docker-compose. If you receive HTTP errors, restart docker and run the command again. You may need to adjust your timeouts appropriately.
 
     $ docker-compose up -d
