@@ -9,7 +9,7 @@ last_modified_at: 2019-11-01 10:54:00
 
 ---
 
-Using Docker inside LXC can be challenging, but here's what works for me. A few gotcha's about my setup is that it is _not_ being used for production use, and I would  not recommend it.  I am using ZFS storage for my Linux Container, this will mean this setup may not work if you're using NFS or LVM storage configuarations.  Additionally, I am using docker-compose as some of my docker containers are linked together.
+Using Docker inside LXC can be challenging, but here's what works for me. A few gotcha's about my setup is that it is _not_ being used for production use, and I would  not recommend it.  I am using ZFS storage for my Linux Container, this will mean this setup may not work if you're using NFS or LVM storage configurations.  Additionally, I am using docker-compose as some of my docker containers are linked together.
 
 <!--more-->
 
