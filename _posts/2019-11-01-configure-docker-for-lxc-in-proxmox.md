@@ -25,14 +25,16 @@ Modify `/etc/modules-load.d/modules.conf`
     aufs
     vfs
 
-Modify `/etc/docker/daemon.json`
- - This is needed because I am using ZFS storage. If you are using LVM, I would imagine overlay2 would work just fine.
-   
-    {
-      "storage-driver": "vfs"
-    }
+Modify `/etc/docker/daemon.json`. This is needed because I am using ZFS storage. If you are using LVM, I would imagine overlay2 would work just fine.
 
-Run `systemctl daemon-reload && systemctl start docker`
+    {
+        "storage-driver": "vfs"
+    }
+    
+Reload systemctl daemon and start docker
+
+    $ systemctl daemon-reload && systemctl start docker
+
 Setup Docker-Compose network
  - [See official Docker documentation on how to configure your network](https://docs.docker.com/network/macvlan/)
 Run `docker-compose up -d`
@@ -51,4 +53,4 @@ Configure mountpoints (optional)
     mp2: /zstorage/timemachine,mp=/zstorage/timemachine
 
 ### Sources
-(Proxmox Forum: Docker in lxc container](https://forum.proxmox.com/threads/docker-in-lxc-container.45204/)
+[Proxmox Forum: Docker in lxc container](https://forum.proxmox.com/threads/docker-in-lxc-container.45204/)
