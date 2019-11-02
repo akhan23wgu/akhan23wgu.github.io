@@ -15,40 +15,40 @@ Using Docker inside LXC can be challenging, but here's what works for me. A few 
 
 ### Configure Docker for LXC
 
- 1. Install docker-ce on Ubuntu 19.04 LXC container and add $USER to `docker` group
+Install docker-ce on Ubuntu 19.04 LXC container and add $USER to `docker` group
 
-    apt-get install docker-ce
-    usermod -aG docker $USER
+    $ apt-get install docker-ce
+    $ usermod -aG docker $USER
 
-2. Modify `/etc/modules-load.d/modules.conf`
+Modify `/etc/modules-load.d/modules.conf`
 
     aufs
     vfs
 
-3. Modify `/etc/docker/daemon.json`
-   1. This is needed because I am using ZFS storage. If you are using LVM, I would imagine overlay2 would work just fine.
+Modify `/etc/docker/daemon.json`
+ - This is needed because I am using ZFS storage. If you are using LVM, I would imagine overlay2 would work just fine.
    
     {
       "storage-driver": "vfs"
     }
 
-4. Run `systemctl daemon-reload && systemctl start docker`
-5. Setup Docker-Compose network
-    1. [See official Docker documentation on how to configure your network](https://docs.docker.com/network/macvlan/)
-6. Run `docker-compose up -d`
-    1. If receiving HTTP errors, restart docker and run again. You may need to adjust your timeouts appropriately.
-7. Additional parameters for lcx 1xx.conf in `/opt/pve/lxc/`
+Run `systemctl daemon-reload && systemctl start docker`
+Setup Docker-Compose network
+ - [See official Docker documentation on how to configure your network](https://docs.docker.com/network/macvlan/)
+Run `docker-compose up -d`
+ - If receiving HTTP errors, restart docker and run again. You may need to adjust your timeouts appropriately.
+Additional parameters for lcx 1xx.conf in `/opt/pve/lxc/`
 
     lxc.cgroup.devices.allow: a
     lxc.mount.auto: proc:rw sys:rw
     lxc.cap.drop: 
     features: nesting=1
     
- 8. Configure mountpoints (optional)
+Configure mountpoints (optional)
  
     mp0: /zstorage/media,mp=/zstorage/media
     mp1: /zstorage/home,mp=/zstorage/home
     mp2: /zstorage/timemachine,mp=/zstorage/timemachine
-    
- ### Sources
- [docker in lxc container](https://forum.proxmox.com/threads/docker-in-lxc-container.45204/)
+
+### Sources
+(Proxmox Forum: Docker in lxc container](https://forum.proxmox.com/threads/docker-in-lxc-container.45204/)
