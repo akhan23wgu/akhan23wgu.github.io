@@ -76,8 +76,8 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
-#twitter:
-#  username               : "@@abedcan"
+twitter:
+  username               : "@abedcan"
 #facebook:
 #  username               :
 #  app_id                 :
@@ -117,7 +117,8 @@ author:
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        :  lastfm           :
+  instagram        :
+  lastfm           :
   linkedin         : "abidmkhan"
   pinterest        :
   soundcloud       :
